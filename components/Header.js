@@ -11,10 +11,12 @@ const Header = () => {
         rounded={true}
         iconOnly={true}
         ripple="dark"
-        className="hidden md:inline-flex h-20 w-20 border-0"
+        className="md:inline-flex h-20 w-20 border-0"
       >
         <Icon name="menu" size="3xl" />
       </Button>
+      <Icon name="description" size="5xl" color="blue" />
+      <h1 className="md:inline-flex ml-2 text-gray-700">Docs</h1>
     </div>
   );
 };
