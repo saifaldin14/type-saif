@@ -25,6 +25,25 @@ const Header = () => {
           className="flex-grow px-5 text-sm bg-transparent outline-none"
         />
       </div>
+
+      <Button
+        color="gray"
+        buttonType="outline"
+        rounded={true}
+        iconOnly={true}
+        ripple="dark"
+        className="ml-5 md:ml-20 h-20 w-20 border-0"
+      >
+        <Icon name="apps" size="3xl" />
+      </Button>
+
+      <img
+        loading="lazy"
+        onClick={signOut}
+        className="cursor-pointer h-12 w-12 rounded-full ml-2"
+        src={session.user.image}
+        alt=""
+      />
     </div>
   );
 };
