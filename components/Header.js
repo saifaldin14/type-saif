@@ -4,7 +4,7 @@ import Icon from "@material-tailwind/react/Icon";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 flex items-center px-4 py-2 shadow-md bg-white">
+    <header className="sticky top-0 z-50 flex items-center px-4 py-2 shadow-md bg-white">
       <Button
         color="gray"
         buttonType="outline"
@@ -39,12 +39,11 @@ const Header = () => {
 
       <img
         loading="lazy"
-        onClick={signOut}
         className="cursor-pointer h-12 w-12 rounded-full ml-2"
-        src={session.user.image}
+        src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg"
         alt=""
       />
-    </div>
+    </header>
   );
 };
 
